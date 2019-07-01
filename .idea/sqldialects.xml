@@ -11,5 +11,6 @@
     <file url="file://$PROJECT_DIR$/scripts/catalog.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/scripts/contact.sql" dialect="MariaDB" />
     <file url="file://$PROJECT_DIR$/scripts/message.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/scripts/order.sql" dialect="MariaDB" />
   </component>
 </project>

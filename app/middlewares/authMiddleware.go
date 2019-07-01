@@ -32,6 +32,11 @@ func AuthMiddleware() gin.HandlerFunc {
 						AccountID: s.AccountID,
 						UserId:user.ID,
 					})
+				} else if c.Request.URL.Path == "/api/user/" {
+					c.Set("principle", utils.Principle{
+						AccountID: s.AccountID,
+						UserId:0,
+					})
 				} else {
 					logrus.WithError(e).Error("get user by accountID failed")
 				}

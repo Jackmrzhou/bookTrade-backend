@@ -12,6 +12,7 @@ type Book struct {
 	Type         int    // for a sale or for a request
 	OutLink      string // only amazon
 	CatalogID    int
+	IsDeleted int
 }
 
 func (Book) TableName() string {
@@ -21,6 +22,11 @@ func (Book) TableName() string {
 const (
 	SELL = 1
 	REQUEST = 1 << 1
+)
+
+const (
+	BOOK_DELETED = 1
+	BOOK_UNDELETED = 0
 )
 
 const OUTLINK = "https://isbnsearch.org/isbn/"

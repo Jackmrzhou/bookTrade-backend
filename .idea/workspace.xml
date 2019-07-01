@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7a7d1dc-464e-485d-8b67-d92c354317f9" name="Default Changelist" comment="" />
+    <list default="true" id="d7a7d1dc-464e-485d-8b67-d92c354317f9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/controllers/OrderController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dao/orderDao.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Order.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/order.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/258623d1-47c4-488c-889f-6651f5b663ce.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/258623d1-47c4-488c-889f-6651f5b663ce.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/BookController.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/BookController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/MessageController.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/MessageController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/UserController.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/UserController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/error/code.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/error/code.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/middlewares/authMiddleware.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/middlewares/authMiddleware.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/router/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/app/router/router.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/bookDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/bookDao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dao/messageDao.go" beforeDir="false" afterPath="$PROJECT_DIR$/dao/messageDao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/Book.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/Book.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Book.sql" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Book.sql" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,58 +76,37 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/BookController.go">
+        <entry file="file://$PROJECT_DIR$/models/Order.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="220" column="28" lean-forward="true" selection-start-line="220" selection-start-column="28" selection-end-line="220" selection-end-column="28" />
-              <folding>
-                <element signature="e#21#97#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="480">
+              <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/User.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/user.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/UserController.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+            <state relative-caret-position="696">
+              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dao/bookDao.go">
+        <entry file="file://$PROJECT_DIR$/app/middlewares/authMiddleware.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
+            <state relative-caret-position="744">
+              <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Book.go">
+        <entry file="file://$PROJECT_DIR$/app/controllers/BookController.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+            <state relative-caret-position="1752">
+              <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -117,20 +114,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/router/router.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
+            <state relative-caret-position="314">
+              <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/MessageController.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="38" column="83" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
-              <folding>
-                <element signature="e#21#97#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="720">
+              <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -138,8 +132,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dao/messageDao.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+            <state relative-caret-position="392">
+              <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
               <folding>
                 <element signature="e#13#77#0" expanded="true" />
               </folding>
@@ -148,10 +142,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/Message.go">
+        <entry file="file://$PROJECT_DIR$/app/controllers/AccountController.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="5" selection-start-line="4" selection-start-column="5" selection-end-line="4" selection-end-column="5" />
+            <state relative-caret-position="1488">
+              <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/VerifyController.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/OrderController.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="125" column="33" lean-forward="true" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
+              <folding>
+                <element signature="e#21#89#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -166,16 +181,15 @@
     </option>
   </component>
   <component name="GOROOT" path="C:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/ImageController.go" />
-        <option value="$PROJECT_DIR$/utils/fileUtils.go" />
-        <option value="$PROJECT_DIR$/scripts/Account.sql" />
-        <option value="$PROJECT_DIR$/conf/config.go" />
         <option value="$PROJECT_DIR$/app/controllers/VerifyController.go" />
         <option value="$PROJECT_DIR$/dao/verifyCodeDao.go" />
         <option value="$PROJECT_DIR$/app/controllers/RegisterController.go" />
@@ -190,7 +204,6 @@
         <option value="$PROJECT_DIR$/app/controllers/PassportController.go" />
         <option value="$PROJECT_DIR$/dao/accountDao.go" />
         <option value="$PROJECT_DIR$/app/controllers/AccountController.go" />
-        <option value="$PROJECT_DIR$/app/error/code.go" />
         <option value="$PROJECT_DIR$/dao/sessionDao.go" />
         <option value="$PROJECT_DIR$/app/services/UserService.go" />
         <option value="$PROJECT_DIR$/models/fileRef.go" />
@@ -200,12 +213,9 @@
         <option value="$PROJECT_DIR$/models/Catalog.go" />
         <option value="$PROJECT_DIR$/app/App.go" />
         <option value="$PROJECT_DIR$/utils/stringUtils.go" />
-        <option value="$PROJECT_DIR$/app/middlewares/authMiddleware.go" />
         <option value="$PROJECT_DIR$/utils/userUtils.go" />
-        <option value="$PROJECT_DIR$/models/Book.go" />
         <option value="$PROJECT_DIR$/utils/sessionUtils.go" />
         <option value="$PROJECT_DIR$/dao/catalogDao.go" />
-        <option value="$PROJECT_DIR$/scripts/Book.sql" />
         <option value="$PROJECT_DIR$/scripts/UserRecord.sql" />
         <option value="$PROJECT_DIR$/models/record.go" />
         <option value="$PROJECT_DIR$/dao/userDao.go" />
@@ -214,24 +224,33 @@
         <option value="$PROJECT_DIR$/models/Contact.go" />
         <option value="$PROJECT_DIR$/scripts/message.sql" />
         <option value="$PROJECT_DIR$/models/Message.go" />
-        <option value="$PROJECT_DIR$/dao/messageDao.go" />
-        <option value="$PROJECT_DIR$/app/controllers/MessageController.go" />
-        <option value="$PROJECT_DIR$/app/router/router.go" />
         <option value="$PROJECT_DIR$/dao/database.go" />
-        <option value="$PROJECT_DIR$/dao/bookDao.go" />
-        <option value="$PROJECT_DIR$/app/controllers/BookController.go" />
         <option value="$PROJECT_DIR$/scripts/User.sql" />
         <option value="$PROJECT_DIR$/models/user.go" />
+        <option value="$PROJECT_DIR$/models/Order.go" />
+        <option value="$PROJECT_DIR$/scripts/order.sql" />
+        <option value="$PROJECT_DIR$/models/Book.go" />
+        <option value="$PROJECT_DIR$/scripts/Book.sql" />
+        <option value="$PROJECT_DIR$/dao/bookDao.go" />
+        <option value="$PROJECT_DIR$/dao/orderDao.go" />
+        <option value="$PROJECT_DIR$/app/error/code.go" />
+        <option value="$PROJECT_DIR$/app/controllers/OrderController.go" />
+        <option value="$PROJECT_DIR$/app/router/router.go" />
         <option value="$PROJECT_DIR$/app/controllers/UserController.go" />
+        <option value="$PROJECT_DIR$/app/middlewares/authMiddleware.go" />
+        <option value="$PROJECT_DIR$/app/controllers/BookController.go" />
+        <option value="$PROJECT_DIR$/dao/messageDao.go" />
+        <option value="$PROJECT_DIR$/app/controllers/MessageController.go" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="320" />
     <option name="y" value="171" />
     <option name="width" value="1920" />
     <option name="height" value="1045" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -319,6 +338,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -367,7 +387,8 @@
     </recent_temporary>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <frame x="-7" y="-7" width="2062" height="1126" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17015968" />
@@ -380,8 +401,8 @@
       <window_info anchor="bottom" id="File Transfer" weight="0.32964823" />
       <window_info anchor="bottom" id="Database Console" weight="0.32964823" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23316583" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32997987" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.23239437" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -401,37 +422,6 @@
     <proxy>direct</proxy>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/VerifyCode.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/config.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="912">
-          <caret line="42" column="18" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/mail.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
-          <folding>
-            <element signature="e#16#81#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -478,13 +468,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="17" column="24" lean-forward="true" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/VerifyController.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -578,13 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/middlewares/authMiddleware.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="30" column="48" selection-start-line="30" selection-start-column="48" selection-end-line="30" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/userUtils.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="552">
@@ -613,13 +589,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/AccountController.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="62" column="12" lean-forward="true" selection-start-line="62" selection-start-column="12" selection-end-line="62" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao/catalogDao.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
@@ -627,13 +596,6 @@
           <folding>
             <element signature="e#13#77#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/Book.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" column="2" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -668,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/error/code.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
-          <caret line="37" column="30" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/contact.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -703,61 +658,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dao/messageDao.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding>
-            <element signature="e#13#77#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/MessageController.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="38" column="83" selection-start-line="38" selection-start-column="83" selection-end-line="38" selection-end-column="83" />
-          <folding>
-            <element signature="e#21#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dao/database.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dao/bookDao.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/Book.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/router/router.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="40" column="38" lean-forward="true" selection-start-line="40" selection-start-column="38" selection-end-line="40" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/BookController.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="220" column="28" lean-forward="true" selection-start-line="220" selection-start-column="28" selection-end-line="220" selection-end-column="28" />
-          <folding>
-            <element signature="e#21#97#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -771,14 +675,125 @@
     <entry file="file://$PROJECT_DIR$/models/user.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
-          <caret line="13" column="6" lean-forward="true" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/order.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Book.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Book.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/bookDao.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/orderDao.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/error/code.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="960">
+          <caret line="40" column="1" lean-forward="true" selection-start-line="40" selection-start-column="1" selection-end-line="40" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/OrderController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="125" column="33" lean-forward="true" selection-start-line="125" selection-start-column="33" selection-end-line="125" selection-end-column="33" />
+          <folding>
+            <element signature="e#21#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/Order.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="25" lean-forward="true" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/router/router.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="53" column="49" selection-start-line="53" selection-start-column="49" selection-end-line="53" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/AccountController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1488">
+          <caret line="71" column="1" lean-forward="true" selection-start-line="71" selection-start-column="1" selection-end-line="71" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/VerifyController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="25" column="34" lean-forward="true" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UserController.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
+        <state relative-caret-position="696">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/middlewares/authMiddleware.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="37" column="33" lean-forward="true" selection-start-line="37" selection-start-column="33" selection-end-line="37" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/BookController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1752">
+          <caret line="121" column="5" lean-forward="true" selection-start-line="121" selection-start-column="5" selection-end-line="121" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dao/messageDao.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="e#13#77#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/MessageController.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="49" column="45" lean-forward="true" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
         </state>
       </provider>
     </entry>

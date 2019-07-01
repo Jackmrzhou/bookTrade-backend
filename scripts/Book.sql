@@ -9,5 +9,6 @@ create table book (
     introduction varchar(1000),
     type tinyint,
     out_link varchar(1000),
-    catalog_id int
+    catalog_id int,
+    is_deleted tinyint
 );

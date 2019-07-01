@@ -119,6 +119,31 @@ func GetUserProfile(c *gin.Context) {
 	}
 }
 
+type getUserProdileCommonReq struct {
+	UserID int `form:"user_id"`
+}
+
+func GetUserProfileCommon(c *gin.Context) {
+	var query getUserProdileCommonReq
+	if err := c.ShouldBindQuery(&query); err != nil {
+		c.Set(error2.CodeKey, error2.BadRequest)
+		return
+	}
+	if user, err := dao.GetUserByUserID(query.UserID); err != nil {
+		log.WithError(err).Error("get user by user id failed")
+		c.Set(error2.CodeKey, error2.ServerError)
+		return
+	} else {
+		c.JSON(http.StatusOK, getUserProfileResp{
+			Username:     user.Username,
+			AvatarKey:    user.AvatarKey,
+			Introduction: user.Introduction,
+			PhoneNumber:user.PhoneNumber,
+			Address:user.Address,
+		})
+	}
+}
+
 type getViewedUsersReq struct {
 	BookID int `form:"book_id" binding:"required"`
 }

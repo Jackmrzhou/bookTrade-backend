@@ -33,7 +33,13 @@ func GetContact(c *gin.Context) {
 		} else {
 			var resp getContactResp
 			for _, contact := range cs {
-				if user, err := dao.GetUserByUserID(contact.CounterpartID); err != nil {
+				var id int
+				if p.UserId == contact.CounterpartID {
+					id = contact.SelfID
+				}else {
+					id = contact.CounterpartID
+				}
+				if user, err := dao.GetUserByUserID(id); err != nil {
 					c.Set(error2.CodeKey, error2.ServerError)
 					return
 				}else if count, err := dao.CountMessageUnreadByContactID(contact.ID); err != nil{

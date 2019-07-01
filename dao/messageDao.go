@@ -24,7 +24,7 @@ func CreateContactIfNotExists(contact *models.Contact) error {
 
 func GetAllContactsBySelfID(selfID int) ([]models.Contact, error) {
 	var cs []models.Contact
-	err := db.Where("self_id = ?", selfID).Find(&cs).Error
+	err := db.Where("self_id = ? OR counterpart_id = ?", selfID, selfID).Find(&cs).Error
 	return cs, err
 }
 
@@ -50,5 +50,12 @@ func CountMessageUnread(userID int) (int, error) {
 }
 
 func SaveAllMsgs(msgs []models.Message) error {
-	return db.Model(&models.Message{}).Updates(msgs).Error
+	var err error
+	for _, msg := range msgs {
+		err = db.Model(&msg).Update("is_read", msg.IsRead).Error
+		if err != nil {
+			return err
+		}
+	}
+	return nil
 }

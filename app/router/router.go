@@ -31,6 +31,7 @@ func InitRouter(r *gin.Engine) error {
 		userAPI.GET("/avatar", controllers.GetAvatar)
 		userAPI.GET("/profile", controllers.GetUserProfile)
 	}
+	api.GET("/user/common", controllers.GetUserProfileCommon)
 	//api.GET("/api/user", controllers.GetViewedUsers)
 
 	bookAPI := api.Group("/book", middlewares.AuthMiddleware())
@@ -40,6 +41,7 @@ func InitRouter(r *gin.Engine) error {
 	}
 	api.GET("/book", controllers.GetBookDetail)
 	api.GET("/book/viewed", controllers.GetViewedUsers)
+	api.GET("/bookInOrder", controllers.GetBookDetailInOrder)
 
 	catalogAPI := api.Group("/catalog")
 	{
@@ -59,6 +61,13 @@ func InitRouter(r *gin.Engine) error {
 	listApi := api.Group("/list")
 	{
 		listApi.GET("/", controllers.ListAll)
+	}
+
+	orderAPI := api.Group("/order", middlewares.AuthMiddleware())
+	{
+		orderAPI.POST("/", controllers.CreateOrder)
+		orderAPI.GET("/", controllers.GetOrders)
+		orderAPI.PUT("/", controllers.UpdateOrder)
 	}
 
 	return nil

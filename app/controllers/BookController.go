@@ -73,6 +73,7 @@ type newRequestBookReq struct {
 	CoverKey string `json:"cover_key" binding:"required"`
 	Introduction string `json:"introduction" binding:"required"`
 	ISBN string `json:"ISBN"`
+	CatalogID int `json:"catalog_id" binding:"required"`
 }
 
 type newRequestBookResp struct {
@@ -104,6 +105,7 @@ func NewRequestBook(c *gin.Context) {
 		CoverKey:query.CoverKey,
 		Introduction: query.Introduction,
 		ISBN:query.ISBN,
+		CatalogID:query.CatalogID,
 		Type:models.REQUEST,
 	}
 	if query.ISBN != "" {
@@ -222,6 +224,33 @@ func GetBookDetail(c *gin.Context) {
 		})
 	}
 
+}
+
+func GetBookDetailInOrder(c *gin.Context) {
+	var query getBookDetailReq
+	if err := c.ShouldBindQuery(&query); err != nil {
+		c.Set(error2.CodeKey, error2.BadRequest)
+		return
+	}
+
+	if book, err := dao.GetBookByIDDeletedOrNot(query.BookID); err != nil {
+		c.Set(error2.CodeKey, error2.ServerError)
+	} else if catalog, err := dao.GetCatalogByID(book.CatalogID); err != nil {
+		c.Set(error2.CodeKey, error2.ServerError)
+	} else {
+		logrus.Info(book)
+		c.JSON(http.StatusOK, getBookDetailResp{
+			BookID: book.ID,
+			UserID:book.UserID,
+			BookName:book.Name,
+			Author:book.Author,
+			Price:book.Price,
+			CatalogName:catalog.Name,
+			CoverKey:book.CoverKey,
+			Introduction:book.Introduction,
+			Type: book.Type,
+		})
+	}
 }
 
 type listAllReq struct {
