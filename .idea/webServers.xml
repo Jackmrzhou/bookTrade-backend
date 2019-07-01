@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4f08b37f-bbea-4ded-8081-45c25e220155" name="vmware ubuntu16.04" url="http://192.168.123.66">
+        <fileTransfer host="192.168.123.66" port="22" rootFolder="/home/gilmour/bs/src" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
