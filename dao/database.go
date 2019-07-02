@@ -6,6 +6,7 @@ import (
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"strconv"
+	"time"
 )
 
 var db *gorm.DB
@@ -22,5 +23,6 @@ func InitDatabase(config *conf.AppConfig) error {
 		dbConf.Charset,
 	)
 	db, err = gorm.Open("mysql", connStr)
+	db.DB().SetConnMaxLifetime(300 * time.Second)
 	return err
 }
