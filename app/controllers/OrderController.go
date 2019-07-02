@@ -6,7 +6,7 @@ import (
 	"bookTrade-backend/models"
 	"bookTrade-backend/utils"
 	"github.com/gin-gonic/gin"
-	dao2 "github.com/jackmrzhou/bookTrade-backend/dao"
+	"github.com/jinzhu/gorm"
 	"github.com/sirupsen/logrus"
 	"net/http"
 	"time"

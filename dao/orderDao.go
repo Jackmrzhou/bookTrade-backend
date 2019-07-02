@@ -2,7 +2,6 @@ package dao
 
 import (
 	"bookTrade-backend/models"
-	models2 "github.com/jackmrzhou/bookTrade-backend/models"
 )
 
 func CreateOrder(order *models.Order) error {
