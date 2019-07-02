@@ -11,7 +11,8 @@ func CreateMessage(message *models.Message) error {
 
 func CreateContactIfNotExists(contact *models.Contact) error {
 	var c models.Contact
-	if err := db.Where("self_id = ? AND counterpart_id = ?", contact.SelfID, contact.CounterpartID).First(&c).Error; err != nil {
+	if err := db.Where("self_id = ? AND counterpart_id = ? OR self_id = ? AND counterpart_id = ?",
+		contact.SelfID, contact.CounterpartID, contact.CounterpartID,contact.SelfID).First(&c).Error; err != nil {
 		if gorm.IsRecordNotFoundError(err){
 			return db.Create(contact).Error
 		}
