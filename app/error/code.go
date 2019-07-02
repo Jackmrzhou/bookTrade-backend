@@ -19,6 +19,7 @@ const (
 	AccountExists   = 4005
 	PingUnauth      = 4006
 	SelfOrder = 4007
+	BookOrdered = 4008
 )
 
 var msg = map[int]string{
@@ -38,6 +39,7 @@ var msg = map[int]string{
 	AccountExists:   "账户已存在",
 	PingUnauth:      "Ping Unauth",
 	SelfOrder: "不能购买/出售自己发布的书籍",
+	BookOrdered: "书籍已经被人下单",
 }
 
 func Translate(code int) string {

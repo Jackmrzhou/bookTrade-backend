@@ -6,6 +6,7 @@ import (
 	"bookTrade-backend/models"
 	"bookTrade-backend/utils"
 	"github.com/gin-gonic/gin"
+	dao2 "github.com/jackmrzhou/bookTrade-backend/dao"
 	"github.com/sirupsen/logrus"
 	"net/http"
 	"time"
@@ -40,6 +41,11 @@ func CreateOrder(c *gin.Context) {
 
 	if principle.UserId == query.UserID {
 		c.Set(error2.CodeKey, error2.SelfOrder)
+		return
+	}
+
+	if _, err := dao.GetOrderByBookID(query.BookID); err == nil || !gorm.IsRecordNotFoundError(err) {
+		c.Set(error2.CodeKey, error2.BookOrdered)
 		return
 	}
 
